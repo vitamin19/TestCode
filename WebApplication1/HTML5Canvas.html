@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <h2>HTML5 Canvas</h2>
+    <canvas id="Canvas"></canvas>
+    <script>
+        var canvas = document.getElementById('Canvas');
+        var outer = canvas.getContext("2d");
+
+        outer.fillStyle = "blue";
+        outer.fillRect(0, 0, canvas.height, canvas.height);
+
+        var inner = canvas.getContext("2d");
+
+        inner.fillStyle = "yellow";
+        inner.fillRect(0.25 * canvas.height, 0.25 * canvas.height, 0.5 * canvas.height, 0.5 * canvas.height);
+    </script>
+
+</body>
+</html>
